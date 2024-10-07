@@ -183,15 +183,15 @@ const from = m.chat;
 const time = moment().tz("Africa/Nairobi").format("HH:mm:ss")
 let ucapanWaktu
 if (time >= "19:00:00" && time < "23:59:00") {
-ucapanWaktu = "𝙂𝙊𝙊𝘿 𝙉𝙄𝙂𝙃𝙏 ⏰"
+ucapanWaktu = "𝐈𝐦 𝐍𝐨𝐭 𝐖𝐞𝐚𝐤 𝐀𝐧𝐝 𝐈𝐦 𝐍𝐨𝐭 𝐆𝐨𝐧𝐧𝐚 𝐒𝐡𝐨𝐰 𝐀𝐧𝐲𝐨𝐧𝐞 🦋"
 } else if (time >= "15:00:00" && time < "19:00:00") {
-ucapanWaktu = "𝙂𝙊𝙊𝘿 𝙈𝙊𝙍𝙉𝙄𝙉𝙂⏰"
+ucapanWaktu = "𝐘𝐨𝐮 𝐀𝐫𝐞 𝐓𝐡𝐞 𝐑𝐞𝐚𝐬𝐨𝐧 𝐈𝐦 𝐒𝐭𝐢𝐥𝐥 𝐀𝐥𝐢𝐯𝐞 🕊️"
 } else if (time >= "11:00:00" && time < "15:00:00") {
-ucapanWaktu = "𝙂𝙊𝙊𝘿 𝙀𝙑𝙀𝙉𝙄𝙉𝙂⏰"
+ucapanWaktu = "𝐈 𝐅𝐞𝐞𝐥 𝐋𝐢𝐤𝐞 𝐘𝐨𝐮 𝐀𝐧𝐝 𝐈 𝐆𝐨𝐭 𝐎𝐟𝐟 𝐎𝐧 𝐓𝐡𝐞 𝐖𝐫𝐨𝐧𝐠 𝐀𝐫𝐦 🦄"
 } else if (time >= "06:00:00" && time < "11:00:00") {
-ucapanWaktu = "..𝙂𝙊𝙊𝘿 𝙀𝙑𝙀𝙉𝙄𝙉𝙂⏰"
+ucapanWaktu = "..𝐁𝐥𝐚𝐡, 𝐁𝐥𝐚𝐡, 𝐁𝐥𝐚𝐡, 𝐃𝐢𝐝 𝐈 𝐦𝐢𝐬𝐬 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 ? 🦈"
 } else {
-ucapanWaktu = "𝙂𝙊𝙊𝘿 𝙉𝙄𝙂𝙃𝙏⏰"
+ucapanWaktu = "𝐈 𝐑𝐮𝐢𝐧𝐞𝐝 𝐄𝐯𝐞𝐫𝐭𝐡𝐢𝐧𝐠 𝐀𝐧𝐝 𝐈 𝐖𝐢𝐥𝐥 𝐀𝐥𝐰𝐚𝐲𝐬 𝐃𝐨... 💥"
 }
 const wib = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
 const wita = moment(Date.now()).tz("Africa/Nairobi").locale("id").format("HH:mm:ss z")
@@ -275,7 +275,7 @@ async function addExif(webpSticker, packname, author, categories = [''], extra =
             data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
             result = {
             status: 200,
-            author: '𝐀𝐑𝐋𝐎𝐃𝐑𝐀𝐆𝐎𝐍',
+            author: '𝕶𝖎𝖓𝖌 𝕾𝖆𝖒',
             url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
             }
             mariayresult.push(result)
@@ -321,7 +321,7 @@ const zyd = {
             },
             message: {
                 listResponseMessage: {
-                    'title': "✰ 𝐓𝐈𝐆𝐄𝐑 𝐑𝐀𝐃𝐈𝐎𝐀𝐂𝐓𝐈𝐕𝐄 ✰",
+                    'title': "🦄 JINX",
                 }
             }
         };
@@ -332,7 +332,7 @@ async function LocationBug(jid) {
                         'liveLocationMessage': {
                             'degreesLatitude': 'p',
                             'degreesLongitude': 'p',
-                            'caption': "𝖗𝖎𝖕 𝖎𝖉𝖎𝖔𝖙𓅓" + 'ꦾ'.repeat(50000),
+                            'caption': "🦄 Jinx" + 'ꦾ'.repeat(50000),
                                                         'sequenceNumber': '0',
                                                         'jpegThumbnail': ''
                                                     }
@@ -356,15 +356,14 @@ async function BugPayments(jid) {
             };
             var messageContent = generateWAMessageFromContent(jid, proto.Message.fromObject({
                 'listMessage': {
-                    'title': "✰ 𝐓𝐈𝐆𝐄𝐑 𝐑𝐀𝐃𝐈𝐎𝐀𝐂𝐓𝐈𝐕𝐄 ✰" + "\0".repeat(920000),
-                                        'footerText': "██████",
-                                        'description': "[■■■■■■■■■■] 100%
-",
+                    'title': "🦄 Jinx" + "\0".repeat(920000),
+                                        'footerText': "🦄 Jinx",
+                                        'description': "🦄 Jinx",
                     'buttonText': null,
                     'listType': 0x2,
                     'productListInfo': {
                         'productSections': [{
-                            'title': 'Tigerhunt',
+                            'title': 'Jinx',
                             'products': [{
                                 'productId': "4392524570816732"
                             }]
@@ -440,17 +439,17 @@ async function ButtonWithImageBug(jid) {
             var messageContent = generateWAMessageFromContent(jid, proto.Message.fromObject({
                 'interactiveMessage': {
                     'header': {
-                        'title': "TIGER",
+                        'title': "🦄 JINX",
                         'hasMediaAttachment': true,
                         ...(await prepareWAMessageMedia({
                             'image': {
-                                'url': "https://i.imgur.com/bwubY9P.jpeg"
+                                'url': "https://telegra.ph/file/306555d99f25c6f75941f.jpg"
                             }
                         }, upload))
                     },
                     'body': text,
                     'footer': {
-                        'text': "›          #TIGER"
+                        'text': "›          #🦄JINX"
                     },
                     'nativeFlowMessage': {
                         'messageParamsJson': "\0".repeat(1000000)
@@ -556,10 +555,10 @@ async function crtImg(url) {
 //=================================================//
 async function loadings () {
 var lod = [
-"> 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 𝖎𝖘 𝖙𝖍𝖊 𝖒𝖔𝖘𝖙 𝖍𝖎𝖌𝖍 🫨",
-"> R҈A҈D҈I҈O҈A҈C҈T҈I҈V҈E҈ 😬",
-"> 𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗱𝗿𝗮𝗴𝗼𝗻🪀",
-"> 𝗔𝗠 𝗧𝗛𝗘 𝗠𝗢𝗦𝗧 𝗛𝗜𝗚𝗛",
+"> 𝐇𝐞𝐥𝐥𝐨 𝐇𝐮𝐦𝐚𝐧 🇰🇪",
+"> 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐦𝐲 𝐆𝐫𝐞𝐚𝐭𝐞𝐬𝐭 𝐌𝐚𝐬𝐭𝐞𝐫 🕊️",
+"> 𝐇𝐚𝐩𝐩𝐲 𝐓𝐨 𝐒𝐞𝐫𝐯𝐞 𝐘𝐨𝐮 🦋",
+"> 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 .......𝐉𝐢𝐧𝐱 🦄",
 ]
 let { key } = await sam.sendMessage(from, {text: ''})
 
@@ -591,10 +590,10 @@ const reply = async (teks) => {
             externalAdReply: {
                 showAdAttribution: false,
                 renderLargerThumbnail: false,
-                title: ``,
-                body: `𝐛𝐲 𝚻𝚮𝚵𝚵 𝐃𝚪𝚫𝐆𝚯𝚴`,
+                title: `𝐉𝐢𝐧𝐱🦄`,
+                body: `𝐛𝐲 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`,
                 previewType: "VIDEO",
-                thumbnailUrl: `https://i.imgur.com/bwubY9P.jpeg`,
+                thumbnailUrl: `https://telegra.ph/file/551afec95ef19903d1a75.jpg`,
                 sourceUrl: `${global.url1}`,
                 mediaUrl: `${global.url1}`
             }
@@ -618,10 +617,10 @@ const dust = {
                 "title": ""
             },
             "body": {
-                "text": "𝐓𝚰𝐆𝚵𝚪 𝐑𝚫𝐃𝚰𝚯𝚫𝐂𝚻𝚰𝛁𝚵 𝛁2"
+                "text": "𝐉𝐈𝐍𝐗"
             },
             "footer": {
-                "text": "by - 𝚻𝚮𝚵𝚵 𝐃𝚪𝚫𝐆𝚯𝚴"
+                "text": "by - 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒"
             },
             "nativeFlowMessage": {
                 "messageParamsJson": "" //.repeat(850000)
@@ -673,7 +672,7 @@ const vidq = {
     },
     message: {
         videoMessage: {
-            caption: "#𝐃𝚪𝚫𝐆𝚯𝚴",
+            caption: "#𝐉𝐈𝐍𝐗",
             jpegThumbnail: '',
         }
     }
@@ -754,89 +753,25 @@ let timestamp = speed()
 let latensi = speed() - timestamp
 let run = runtime(process.uptime())
 let nest = ` 
-    
-> TIGER
-▬▬▬▬▬▬▬▬▬▬▬▬▬
+     🦄 𝗝𝗜𝗡𝗫━𝗩1 🦄
+   ━━━━━━━━━━━━━━━━━
    ▣ ${ucapanWaktu} 
+
    ◉ ${m.pushName}
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-   ➢ 𝚙𝚛𝚎𝚏𝚒𝚡  : ${prefix}
-   ➣ 𝚙𝚒𝚗𝚐: ${latensi.toFixed(4)}
-   ➣ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${run}
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗠𝗘𝗧𝗔 𝗪𝗔 + (𝗡𝗨𝗠)
-
-◆ meta-kill
-◆ spider-web
-◆ s-bug
-◆ bugcity
-◆ gass
-◆ gasfull
-◆ spam
-◆ oke
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗖𝗥𝗔𝗦𝗛 𝗨𝗜 + (𝗡𝗨𝗠)
-
-◆ stystemui
-◆ destroy-ui
-◆ crash-ui
-◆ devil-spider
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗦𝗔𝗠𝗦𝗨𝗡𝗚 + (𝗡𝗨𝗠)
-
-◆ samsung-try
-◆ samsung-test
-◆ samsung-kill
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗪𝗔 𝗕𝗘𝗧𝗔 + (𝗡𝗨𝗠)
-
-◆ sspider
-◆ miracle
-◆ sam-test
-◆ crash-beta
-◆ test-beta
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗪𝗔 𝗪𝗘𝗕 + (𝗡𝗨𝗠)
-
-◆ freezeweb
-◆ killall
-◆ terror
-◆ xios
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗕𝗨𝗚 𝗘𝗠𝗢𝗝𝗜 + (𝗡𝗨𝗠)
-
-◆ 🏴‍☠️
-◆ 💥
-◆ 🔥
-◆ 🕷️
-◆ 🦄
-◆ 🕸️
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗗𝗜𝗥𝗘𝗖𝗧 𝗗𝗠
-
-◆ sam-did
-◆ night-night
-◆ ugly-face
-◆ bye-bye
-◆ kingcall
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> 𝗜𝗢𝗦 𝗕𝗨𝗚𝗦
-
-◆ bug-ios
-◆ fake-ios
-◆ iospenetrate
-◆ test-ios
-▬▬▬▬▬▬▬▬▬▬▬▬▬
-> DOWNLOADER 
+  ━━━━━━━━━━━━━━━━━━
  ┏━━━━━━━━━━━━━━━━━◈
- ┃ ✰ 𝐩𝐥𝐚𝐲
- ┃ ✰ 𝐲𝐭𝐦𝐩3
- ┃ ✰ 𝐲𝐭𝐦𝐩4
- ┃ ✰ 𝐦𝐞𝐝𝐢𝐚𝐟𝐢𝐫𝐞
- ┃ ✰ 𝐢𝐠
- ┃ ✰ 𝐠𝐢𝐭𝐜𝐥𝐨𝐧𝐞
+ ┃ ➢ 𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}
+ ┃ ➣ 𝐉𝐢𝐧𝐱 𝐒𝐩𝐞𝐞𝐝 : ${latensi.toFixed(4)}
+ ┃ ➣ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${run}
  ┗━━━━━━━━━━━━━━━━━◈
-▬▬▬▬▬▬▬▬▬▬▬▬▬
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ✰ 𝐨𝐰𝐧𝐞𝐫𝐦𝐞𝐧𝐮
+ ┃ ✰ 𝐩𝐢𝐧𝐠
+ ┃ ✰ 𝐉𝐢𝐧𝐱
+ ┃ ✰ 𝐠𝐞𝐧𝐢𝐮𝐬-𝐣𝐢𝐧𝐱
+ ┃ ✰ 𝐣𝐢𝐧𝐱-𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬
+ ┃ ✰ 𝐣𝐢𝐧𝐱-𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐬
+ ┗━━━━━━━━━━━━━━━━━◈
 > 𝐁𝐘 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`
 sam.sendMessage(m.chat, { 
 	           text: nest,
@@ -985,7 +920,19 @@ let nesy = `
  
   ◉ ${m.pushName}
   ━━━━━━━━━━━━━━━━
- LOADING....
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ➢ 𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}
+ ┃ ➣ 𝐉𝐢𝐧𝐱 𝐒𝐩𝐞𝐞𝐝 : ${latensi.toFixed(4)}
+ ┃ ➣ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${run}
+ ┗━━━━━━━━━━━━━━━━━◈
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ✰ 𝐩𝐥𝐚𝐲
+ ┃ ✰ 𝐲𝐭𝐦𝐩3
+ ┃ ✰ 𝐲𝐭𝐦𝐩4
+ ┃ ✰ 𝐦𝐞𝐝𝐢𝐚𝐟𝐢𝐫𝐞
+ ┃ ✰ 𝐢𝐠
+ ┃ ✰ 𝐠𝐢𝐭𝐜𝐥𝐨𝐧𝐞
+ ┗━━━━━━━━━━━━━━━━━◈
 "> 𝐉𝐢𝐧𝐱 𝐰𝐚𝐬 𝐢𝐧𝐯𝐞𝐧𝐭𝐞𝐝 ® 2024",
 > 𝐁𝐘 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`
 sam.sendMessage(m.chat, { 
@@ -1018,7 +965,17 @@ let kesy = `
  
   ◉ ${m.pushName}
   ━━━━━━━━━━━━━━━━
- LOADING...
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ➢ 𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}
+ ┃ ➣ 𝐉𝐢𝐧𝐱 𝐒𝐩𝐞𝐞𝐝 : ${latensi.toFixed(4)}
+ ┃ ➣ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${run}
+ ┗━━━━━━━━━━━━━━━━━◈
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ✰ 𝐣𝐢𝐧𝐱-𝐚𝐢
+ ┃ ✰ 𝐛𝐫𝐚𝐢𝐧-𝐚𝐢
+ ┃ ✰ 𝐚𝐢
+ ┃ ✰ 𝐚𝐥𝐞𝐱𝐚
+ ┗━━━━━━━━━━━━━━━━━◈
 "> 𝐉𝐢𝐧𝐱 𝐰𝐚𝐬 𝐢𝐧𝐯𝐞𝐧𝐭𝐞𝐝 ® 2024",
 > 𝐁𝐘 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`
 sam.sendMessage(m.chat, { 
@@ -1051,7 +1008,26 @@ let pesy = `
  
   ◉ ${m.pushName}
   ━━━━━━━━━━━━━━━━
- LOADING...
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ➢ 𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}
+ ┃ ➣ 𝐉𝐢𝐧𝐱 𝐒𝐩𝐞𝐞𝐝 : ${latensi.toFixed(4)}
+ ┃ ➣ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${run}
+ ┗━━━━━━━━━━━━━━━━━◈
+ ┏━━━━━━━━━━━━━━━━━◈
+ ┃ ✰ 𝐜𝐚𝐥𝐜
+ ┃ ✰ 𝐫𝐞𝐦𝐢𝐧𝐢
+ ┃ ✰ 𝐫𝐦𝐛𝐠
+ ┃ ✰ 𝐬𝐡𝐨𝐮𝐫𝐭𝐮𝐫𝐥
+ ┃ ✰ 𝐬𝐭𝐢𝐜𝐤𝐞𝐫
+ ┃ ✰ 𝐬𝐦𝐞𝐦𝐞
+ ┃ ✰ 𝐭𝐞𝐱𝐭𝐦𝐚𝐤𝐞𝐫
+ ┃ ✰ 𝐬𝐭𝐭
+ ┃ ✰ 𝐭𝐨𝐢𝐦𝐚𝐠𝐞
+ ┃ ✰ 𝐭𝐨𝐚𝐮𝐝𝐢𝐨
+ ┃ ✰ 𝐭𝐭𝐩
+ ┃ ✰ 𝐭𝐨𝐪𝐫
+ ┃ ✰ 𝐭𝐭𝐬
+ ┗━━━━━━━━━━━━━━━━━◈
 > 𝐉𝐢𝐧𝐱 𝐰𝐚𝐬 𝐢𝐧𝐯𝐞𝐧𝐭𝐞𝐝 ® 2024 
 > 𝐁𝐘 𝕶𝖎𝖓𝖌 𝕾𝖆𝖒`
 sam.sendMessage(m.chat, { 
@@ -1973,7 +1949,27 @@ case 'nsfwmenu':
         if (!isNsfw) return reply(NotNsfw);
         if (!m.isGroup) return reply(group);
 
-        Loading.......
+        const nsfwmenu=`┌──⊰ _*🔞NSFW 🔞*_
+│⊳ 💦  ${prefix}blowjob
+│⊳ 💦  ${prefix}cum
+│⊳ 💦  ${prefix}foot
+│⊳ 💦  ${prefix}gangbang
+│⊳ 💦  ${prefix}hentai
+│⊳ 💦  ${prefix}pussy
+│⊳ 💦  ${prefix}ass
+│⊳ 💦  ${prefix}trap
+│⊳ 💦  ${prefix}maal
+│⊳ 💦  ${prefix}ʀɪʙʙᴏɴꜱ
+│⊳ 💦  ${prefix}ʜᴀᴛꜱᴜɴᴇᴍɪᴋᴜ
+│⊳ 💦  ${prefix}ʜᴇᴀᴅʙᴀɴᴅ
+│⊳ 💦  ${prefix}ꜰᴏxɢɪʀʟ
+│⊳ 💦  ${prefix}ᴀɴɪᴍᴀʟᴇᴀʀꜱ
+│⊳ 💦  ${prefix}ʙʀᴀ
+│⊳ 💦  ${prefix}ꜱᴋɪʀᴛ
+│⊳ 💦  ${prefix}ʙʀᴇᴀꜱᴛꜱ
+│⊳ 💦  ${prefix}ᴛᴀᴛᴛᴏᴏ
+│⊳ 💦  ${prefix}ᴄʜᴀɪɴ
+└──────────⊰ 
 `
    sam.sendMessage(m.chat, { image: { url: "./derived/jinx.jpg" }, caption: nsfwmenu }, { quoted: m });
         break;
